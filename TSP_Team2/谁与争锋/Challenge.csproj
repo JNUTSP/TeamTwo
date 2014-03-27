@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4371D767-6785-4A2C-9777-31F97791912D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Challenge</RootNamespace>
+    <AssemblyName>谁与争锋</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompletionAccordingToProblems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CompletionAccordingToProblems.Designer.cs">
+      <DependentUpon>CompletionAccordingToProblems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompletionAccordingToType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CompletionAccordingToType.Designer.cs">
+      <DependentUpon>CompletionAccordingToType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Highlights.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Highlights.Designer.cs">
+      <DependentUpon>Highlights.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainInterface.Designer.cs">
+      <DependentUpon>MainInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonthInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MonthInput.Designer.cs">
+      <DependentUpon>MonthInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemRecommend.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProblemRecommend.Designer.cs">
+      <DependentUpon>ProblemRecommend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DateInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DateInput.Designer.cs">
+      <DependentUpon>DateInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultAccordingToDate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ResultAccordingToDate.Designer.cs">
+      <DependentUpon>ResultAccordingToDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultAccordingToMonth.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ResultAccordingToMonth.Designer.cs">
+      <DependentUpon>ResultAccordingToMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultToPie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ResultToPie.Designer.cs">
+      <DependentUpon>ResultToPie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SearchResult.Designer.cs">
+      <DependentUpon>SearchResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuperiorSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SuperiorSelect.Designer.cs">
+      <DependentUpon>SuperiorSelect.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CompletionAccordingToProblems.resx">
+      <DependentUpon>CompletionAccordingToProblems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompletionAccordingToType.resx">
+      <DependentUpon>CompletionAccordingToType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Highlights.resx">
+      <DependentUpon>Highlights.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainInterface.resx">
+      <DependentUpon>MainInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthInput.resx">
+      <DependentUpon>MonthInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProblemRecommend.resx">
+      <DependentUpon>ProblemRecommend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="DateInput.resx">
+      <DependentUpon>DateInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultAccordingToDate.resx">
+      <DependentUpon>ResultAccordingToDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultAccordingToMonth.resx">
+      <DependentUpon>ResultAccordingToMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultToPie.resx">
+      <DependentUpon>ResultToPie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchResult.resx">
+      <DependentUpon>SearchResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperiorSelect.resx">
+      <DependentUpon>SuperiorSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
